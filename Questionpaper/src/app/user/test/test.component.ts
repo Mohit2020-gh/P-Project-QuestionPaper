@@ -25,6 +25,7 @@ export class TestComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    this.GetAllQuestion()
   }
 
 }

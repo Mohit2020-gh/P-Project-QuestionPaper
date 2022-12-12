@@ -14,7 +14,7 @@ export class TestService {
   GetQuestion()
   {
     //get will always return a obserable object so we have to specify that we want are storing this in array
-    return this._http.get<Test[]>("url") 
+    return this._http.get<Test[]>("http://localhost:5248/api/Questionpaper") 
 
   }
 }

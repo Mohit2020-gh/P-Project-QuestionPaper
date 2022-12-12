@@ -1,10 +1,11 @@
 <h1>Your test will start soon</h1>
 
 <span *ngFor="let q of question"> <!--ngfor must be used inside element like h1 and span-->
-{{q.Question}}
-{{q.Option1}}
-{{q.Option2}}
-{{q.Option3}}
-{{q.Option4}}
-{{q.CorrectAnswer}}
+{{q.question}}<br>
+
+<input type="radio">{{q.option1}}<br>
+<input type="radio">{{q.option2}}<br>
+<input type="radio">{{q.option3}}<br>
+<input type="radio">{{q.option4}}<br>
+{{q.correctAnswer}}<br>
 </span>
