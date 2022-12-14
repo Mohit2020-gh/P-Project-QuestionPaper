@@ -1,5 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
+import { Answer } from './answer';
 import { Test } from './test';
 
 //Services Hit the API for Request and Response
@@ -16,5 +17,10 @@ export class TestService {
     //get will always return a obserable object so we have to specify that we want are storing this in array
     return this._http.get<Test[]>("http://localhost:5248/api/Questionpaper") 
 
+  }
+  GetScore()
+  {
+    return this._http.get<Answer[]>("http://localhost:5248/api/Questionpaper") 
+  
   }
 }

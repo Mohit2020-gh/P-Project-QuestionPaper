@@ -3,6 +3,7 @@
 
 export class Test { 
 
+    id:number=0
     question:string=''            //Name must be same as database table column name 
     option1:string=''             //Used for get request
     option2:string=''

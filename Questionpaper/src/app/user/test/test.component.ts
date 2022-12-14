@@ -1,7 +1,9 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Test } from 'src/app/test';
+import { Answer } from 'src/app/answer';
 import { TestService } from 'src/app/test.service';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-test',
@@ -10,7 +12,9 @@ import { TestService } from 'src/app/test.service';
 })
 export class TestComponent implements OnInit {
 
-   question:Test[]= []  //making array for storing questions in question array
+   question:Test[]= []  //making array for storing questions in question array\\
+
+   answer:Answer[]=[]
 
   constructor(private _service:TestService) { 
   }
